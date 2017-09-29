@@ -24,7 +24,10 @@ footer{
      line-height: 100%;
  }
 
-
+.myform {
+border-style: solid 10px;
+border-color: black;
+}
 
 
 
