@@ -10,12 +10,6 @@ include 'header.php';
     <title>Project Panel</title>
 </head>
 <body>
-    <select name="Project" id="dropdown">
-    <option value="project1">1</option>
-    <option value="project2">2</option>
-    <option value="project3">3</option>
-    <option value="Project4">4</option>
-    </select>
 </body>
 </html>
 
@@ -23,4 +17,17 @@ include 'header.php';
 <?php
 include 'database.php';
 include 'footer.php';
+
+$req = ('SELECT project_title FROM db_btp');
+$dropdown = $db->prepare($req);
+$dropdown->execute();
+$project = $dropdown->fetchAll();
+
+
 ?>
+
+<select>
+<?php foreach($project as $projects): ?>
+<option value="<?php echo $projects['id'];?>"><?php echo $projects['project_title']; ?></option>
+<?php endforeach; ?>
+</select>
