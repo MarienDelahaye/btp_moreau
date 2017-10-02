@@ -33,7 +33,7 @@ $project = $dropdown->fetchAll();
     <input type="text" name="user" placeholder="Update employees who work on it"><br>
     <input type="text" name="deadline" placeholder="New Deadline"><br>
     <textarea name="task"  cols="30" rows="10" placeholder="New Task and step to do"></textarea><br>
-    <textarea name="description" cols="30" rows="10" placeholder="New Description of the project"></textarea><br>
+    <textarea name="description" cols="30" rows="10" placeholder="is the project finished ? if yes explain how you done it"></textarea><br>
     <input type="submit" class="btn btn-default">
 </form>
 </center>
