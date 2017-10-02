@@ -7,10 +7,10 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">BTP Moreau</a>
+      <a class="navbar-brand" href="index.php">BTP Moreau</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Login</a></li>
+      <li class="active"><a href="project_panel.php">Manage Project</a></li>
       <li><a href="create_project.php">Create Project</a></li>
 
     </ul>
