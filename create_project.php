@@ -20,7 +20,7 @@ include 'footer.php';
 $project_title = $_POST['project_title'];
 $user = $_POST['user'];
 $task = $_POST['task'];
-$req = $bdd->prepare('INSERT into db_btp(project_title, user, task) VALUES(:project_title, :employees, :task');
+$req = $db->prepare('INSERT into db_btp(project_title, user, task) VALUES(:project_title, :employees, :task');
 $req->execute(array(
     'project_title' => $project_title,
     'user' => $user,
